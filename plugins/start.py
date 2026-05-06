@@ -5,10 +5,10 @@ from database.premium import add_user
 TEXT = '''
 🔥 Premium Membership Plans
 
-🥇 1 Month - ₹99
-🥈 3 Month - ₹249
-🏆 6 Month - ₹449
-💎 1 Year - ₹799
+🥇 1 Month - ₹69
+🥈 3 Month - ₹179
+🏆 6 Month - ₹299
+💎 1 Year - ₹549
 '''
 
 @Client.on_message(filters.command("start"))
