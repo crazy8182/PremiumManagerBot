@@ -3,6 +3,8 @@ from config import API_ID, API_HASH, BOT_TOKEN
 
 import asyncio
 
+print("BOT FILE LOADED")
+
 import plugins.start
 import plugins.payments
 import plugins.premium
@@ -41,4 +43,4 @@ async def main():
 
     await app.stop()
 
-app.run(main())
+asyncio.get_event_loop().run_until_complete(main())
