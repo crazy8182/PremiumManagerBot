@@ -21,4 +21,4 @@ async def start(client, message):
         [InlineKeyboardButton("👑 My Plan", callback_data="myplan")]
     ])
 
-    await message.reply_text(TEXT, reply_markup=buttons)
+    await message.reply_text(reply_markup=buttons)
