@@ -2,7 +2,7 @@ import os
 
 API_ID = int(os.environ.get("API_ID", "26741021"))
 API_HASH = os.environ.get("API_HASH", "7c5af0b88c33d2f5cce8df5d82eb2a94")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8767741403:AAGQcNQrcVtwuKACMFBpw6eKBRp4MKloH3c")
 
 MONGO_URI = os.environ.get("MONGO_URI", "mongodb+srv://devashibambhava0:devashibambhava0@cluster0.ux6amy9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
