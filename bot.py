@@ -1,6 +1,7 @@
-from pyrogram import Client
+from pyrogram import Client, idle
 from config import API_ID, API_HASH, BOT_TOKEN
 import asyncio
+
 from utils.checker import premium_checker
 from utils.reminders import left_group_checker
 
@@ -11,11 +12,17 @@ app = Client(
     bot_token=BOT_TOKEN
 )
 
-async def startup_tasks():
+async def main():
+
+    await app.start()
+
+    print("Premium Bot Started")
+
     asyncio.create_task(premium_checker(app))
     asyncio.create_task(left_group_checker(app))
 
-app.start()
-app.loop.run_until_complete(startup_tasks())
-print("Premium Bot Started")
-app.idle()
+    await idle()
+
+    await app.stop()
+
+app.run(main())
